@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "190126697514",
+    "firebase_url": "https://tracking-apps-3a692.firebaseio.com",
+    "project_id": "tracking-apps-3a692",
+    "storage_bucket": "tracking-apps-3a692.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:190126697514:android:f7456f16059a4933446753",
+        "android_client_info": {
+          "package_name": "com.kalinesia.tubesmobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "190126697514-j7nomj5glb11uhar6nksr0870q3rnkdd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kalinesia.tubesmobile",
+            "certificate_hash": "36fbba1e92cf58796e1ea85fcaacc3f2b0cb5341"
+          }
+        },
+        {
+          "client_id": "190126697514-gus0k5sk30ri5cr7fv92ihope1d739o7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCThZzTaRd08uY2Ehes7lGWpeQmkwcJUQM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "190126697514-gus0k5sk30ri5cr7fv92ihope1d739o7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    style="@style/loginParent">
+        <RelativeLayout
+            style="@style/parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:weightSum="12">
+
+                <LinearLayout
+                    style="@style/parent"
+                    android:background="@drawable/login_shape_bk"
+                    android:orientation="vertical"
+                    android:layout_weight="4">
+
+                    <ImageView
+                        style="@style/parent"
+                        android:background="@drawable/ic_login_bk"
+                        android:contentDescription="login background" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <LinearLayout
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/usercircle"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+                    <TextView
+                        android:textColor="@color/whiteTextColor"
+                        android:id="@+id/session_user"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:text="name"
+                        android:layout_weight="4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:textColor="@color/whiteTextColor"
+                        android:id="@+id/txt_keluar"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical"
+                        android:text="keluar"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+                <androidx.cardview.widget.CardView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    style="@style/parent"
+                    app:cardCornerRadius="20dp"
+                    android:elevation="5dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/colorWhite">
+
+                <LinearLayout
+                    android:paddingTop="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="Riwayat Laporan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvCustomer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </RelativeLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add_black_24dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:fabSize="normal" />
+</RelativeLayout>

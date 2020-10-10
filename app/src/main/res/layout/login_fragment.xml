@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    style="@style/loginParent">
+    <ScrollView
+        style="@style/parent">
+
+        <RelativeLayout
+            style="@style/parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:weightSum="12">
+
+                <LinearLayout
+                    style="@style/parent"
+                    android:background="@drawable/login_shape_bk"
+                    android:orientation="vertical"
+                    android:layout_weight="4">
+
+                    <ImageView
+                        style="@style/parent"
+                        android:background="@drawable/ic_login_bk"
+                        android:contentDescription="login background" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp">
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/whiteTextColor"
+                    android:gravity="center"
+                    android:text="PLN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <include
+                    layout="@layout/cardview_login"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

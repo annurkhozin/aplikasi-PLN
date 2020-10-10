@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    style="@style/loginParent">
+    <ScrollView
+        style="@style/parent">
+
+        <RelativeLayout
+            style="@style/parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:weightSum="12">
+
+                <LinearLayout
+                    style="@style/parent"
+                    android:background="@drawable/login_shape_bk"
+                    android:orientation="vertical"
+                    android:layout_weight="4">
+
+                    <ImageView
+                        style="@style/parent"
+                        android:background="@drawable/ic_login_bk"
+                        android:contentDescription="login background" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/acBack"
+                        android:src="@drawable/ic_arrow_back_black"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"/>
+                    <TextView
+                        android:textSize="16sp"
+                        android:textColor="@color/whiteTextColor"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:text="Kembali"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+                <androidx.cardview.widget.CardView
+                    style="@style/parent"
+                    app:cardCornerRadius="20dp"
+                    android:elevation="5dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/colorWhite">
+                    <LinearLayout
+                        android:layout_margin="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/headerForm"
+                            android:text="Tambah Petugas Baru"
+                            android:gravity="center"
+                            android:textSize="18sp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:text="Email Petugas"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                            <EditText
+                                android:inputType="textEmailAddress"
+                                android:textSize="14sp"
+                                android:id="@+id/emailPetugas"
+                                android:hint="Input Email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:text="Nama Petugas"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                            <EditText
+                                android:textSize="14sp"
+                                android:id="@+id/namaPetugas"
+                                android:hint="Input Nama Petugas"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:text="Password"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                            <EditText
+                                android:inputType="textPassword"
+                                android:textSize="14sp"
+                                android:id="@+id/passwordPetugas"
+                                android:hint="Input Password Petugas"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:id="@+id/acSave"
+                                android:text="Simpan"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"/>
+                            <Button
+                                android:visibility="gone"
+                                android:id="@+id/acDelete"
+                                android:text="Hapus"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
