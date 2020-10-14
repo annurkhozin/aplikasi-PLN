@@ -1,9 +1,9 @@
 {
   "project_info": {
     "project_number": "190126697514",
-    "firebase_url": "https://tracking-apps-3a692.firebaseio.com",
+    "firebase_url": "add firebase_url in here",
     "project_id": "tracking-apps-3a692",
-    "storage_bucket": "tracking-apps-3a692.appspot.com"
+    "storage_bucket": "add storage_bucket in here"
   },
   "client": [
     {
@@ -15,7 +15,7 @@
       },
       "oauth_client": [
         {
-          "client_id": "190126697514-j7nomj5glb11uhar6nksr0870q3rnkdd.apps.googleusercontent.com",
+          "client_id": "add client_id in here",
           "client_type": 1,
           "android_info": {
             "package_name": "com.kalinesia.tubesmobile",
@@ -23,20 +23,20 @@
           }
         },
         {
-          "client_id": "190126697514-gus0k5sk30ri5cr7fv92ihope1d739o7.apps.googleusercontent.com",
+          "client_id": "add client_id in here",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCThZzTaRd08uY2Ehes7lGWpeQmkwcJUQM"
+          "current_key": "add current_key in here"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "190126697514-gus0k5sk30ri5cr7fv92ihope1d739o7.apps.googleusercontent.com",
+              "client_id": "add client_id in here",
               "client_type": 3
             }
           ]
